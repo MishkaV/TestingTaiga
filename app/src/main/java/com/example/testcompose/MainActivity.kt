@@ -29,6 +29,7 @@ import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -177,7 +178,7 @@ fun SwimlaneList(swimlane: List<String>) {
     var tableName: String by remember { mutableStateOf(swimlane[0]) }
 
     Row(modifier = Modifier.padding(start = 20.dp)) {
-        Text(text = "Swimlane:")
+        Text(text = stringResource(R.string.str_swimlane))
         Spacer(modifier = Modifier.width(8.dp))
         Column {
             Row(Modifier.clickable {
